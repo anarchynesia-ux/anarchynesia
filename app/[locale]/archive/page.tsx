@@ -31,7 +31,7 @@ export default function ArchivePage() {
   const byYear = useMemo(() => {
     const map = new Map<number, Post[]>()
     posts.forEach((p) => {
-      const d = p.createdAt instanceof Timestamp ? p.createdAt.toDate() : new Date(p.createdAt as string)
+      const d = p.createdAt instanceof Timestamp ? p.createdAt.toDate() : new Date(p.createdAt as unknown as string)
       const y = d.getFullYear()
       if (!map.has(y)) map.set(y, [])
       map.get(y)!.push(p)
@@ -115,7 +115,6 @@ export default function ArchivePage() {
                 viewport={{ once: true, margin: '-60px' }}
                 transition={{ delay: yi * 0.1, duration: 0.7 }}
               >
-                {/* Year heading */}
                 <div className="flex items-center gap-6 mb-8">
                   <span className="font-display text-7xl text-void-border leading-none shrink-0">
                     {year}
@@ -126,7 +125,6 @@ export default function ArchivePage() {
                   </span>
                 </div>
 
-                {/* Post list */}
                 <div className="divide-y divide-void-border ml-0 md:ml-8">
                   {yearPosts.map((post, i) => (
                     <motion.div
@@ -144,9 +142,7 @@ export default function ArchivePage() {
             ))}
           </div>
         ) : (
-          // Tag view
           <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-8">
-            {/* Tag list */}
             <div>
               <p className="mono-label text-ash-dark mb-4 tracking-widest">TAGS</p>
               <div className="flex flex-col gap-1">
@@ -174,7 +170,6 @@ export default function ArchivePage() {
               </div>
             </div>
 
-            {/* Filtered posts */}
             <div className="divide-y divide-void-border">
               {tagFiltered.map((post, i) => (
                 <motion.div
@@ -193,7 +188,6 @@ export default function ArchivePage() {
           </div>
         )}
 
-        {/* Empty state */}
         {!loading && posts.length === 0 && (
           <div className="text-center py-32">
             <p className="font-display text-5xl text-void-border mb-4">EMPTY ARCHIVE</p>
