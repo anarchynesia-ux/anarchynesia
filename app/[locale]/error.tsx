@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 interface ErrorPageProps {
@@ -35,9 +36,9 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
           <button onClick={reset} className="btn-blood">
             Try Again
           </button>
-          <a href="/" className="btn-ghost">
+          <Link href="/" className="btn-ghost">
             Return Home
-          </a>
+          </Link>
         </div>
       </motion.div>
     </div>
