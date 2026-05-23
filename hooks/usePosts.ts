@@ -45,10 +45,7 @@ export function useFeedPosts(pageSize = 12) {
     setLoading(true)
     setError(null)
     try {
-      const { posts: newPosts, lastDoc } = await getPublishedPosts(
-        pageSize,
-        reset ? undefined : lastDocRef.current ?? undefined
-      )
+      const { posts: newPosts, lastDoc } = await getPublishedPosts(pageSize)
       lastDocRef.current = lastDoc
       setPosts((prev) => (reset ? newPosts : [...prev, ...newPosts]))
       setHasMore(newPosts.length === pageSize)
