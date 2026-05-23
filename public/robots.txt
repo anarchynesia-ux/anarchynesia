@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /publish
+Disallow: /settings
+Disallow: /api/
+
+Sitemap: https://anarchynesia.vercel.app/sitemap.xml

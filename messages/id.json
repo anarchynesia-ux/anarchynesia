@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "journal": "Jurnal",
+    "archive": "Arsip",
+    "about": "Manifesto",
+    "login": "Masuk",
+    "dashboard": "Dasbor",
+    "publish": "Terbitkan",
+    "settings": "Pengaturan",
+    "logout": "Keluar"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Arsip Perlawanan Digital",
+      "subtitle": "Bawah Tanah Menulis Balik",
+      "description": "Tulisan anonim, jurnal bawah tanah, dan fragmen manifesto dari dunia digital yang tersembunyi.",
+      "cta": "Masuki Arsip",
+      "secondary": "Baca Manifesto"
+    },
+    "featured": "Transmisi Unggulan",
+    "latest": "Arsip Terbaru",
+    "quotes": {
+      "q1": "Medium adalah pesan. Bawah tanah adalah gerakan.",
+      "q2": "Setiap kata yang diterbitkan tanpa wajah adalah aksi perlawanan kecil.",
+      "q3": "Kami menulis karena diam berarti kaki tangan."
+    }
+  },
+  "journal": {
+    "title": "Umpan Jurnal",
+    "search": "Cari arsip...",
+    "filter": "Saring berdasarkan tag",
+    "all": "Semua Transmisi",
+    "anonymous": "Anonim",
+    "readMore": "Baca Transmisi",
+    "empty": "Tidak ada transmisi ditemukan.",
+    "loading": "Mengambil transmisi..."
+  },
+  "post": {
+    "by": "Oleh",
+    "anonymous": "Anonim",
+    "publishedOn": "Dikirim pada",
+    "tags": "Tag",
+    "share": "Bagikan",
+    "copyLink": "Salin Tautan",
+    "copied": "Tersalin",
+    "readNext": "Baca Berikutnya",
+    "backToFeed": "← Kembali ke Umpan"
+  },
+  "login": {
+    "title": "Masuki Bawah Tanah",
+    "subtitle": "Autentikasi diperlukan untuk menerbitkan.",
+    "github": "Lanjutkan dengan GitHub",
+    "disclaimer": "Identitasmu hanya antara kamu dan arsip.",
+    "loading": "Mengautentikasi..."
+  },
+  "dashboard": {
+    "title": "Transmisimu",
+    "welcome": "Selamat datang kembali",
+    "drafts": "Draf",
+    "published": "Terbit",
+    "total": "Total",
+    "newPost": "Transmisi Baru",
+    "noPosts": "Belum ada transmisi.",
+    "startWriting": "Mulai menulis.",
+    "edit": "Edit",
+    "delete": "Hapus",
+    "publish": "Terbitkan",
+    "unpublish": "Batalkan Terbit",
+    "draft": "Draf",
+    "status": "Status"
+  },
+  "editor": {
+    "title": "Transmisi Baru",
+    "editTitle": "Edit Transmisi",
+    "titlePlaceholder": "Judul transmisimu...",
+    "contentPlaceholder": "Mulai menulis. Markdown didukung.\n\n# Judul\n**tebal** *miring* `kode`\n\n> Kutipan",
+    "tags": "Tag",
+    "tagsPlaceholder": "perlawanan, manifesto, arsip",
+    "language": "Bahasa",
+    "anonymous": "Terbitkan secara anonim",
+    "anonymousHelp": "Namamu akan disembunyikan dari pembaca.",
+    "saveDraft": "Simpan Draf",
+    "publish": "Terbitkan",
+    "preview": "Pratinjau",
+    "write": "Tulis",
+    "saving": "Menyimpan...",
+    "saved": "Tersimpan",
+    "publishing": "Menerbitkan...",
+    "published": "Terbit",
+    "autosave": "Simpan otomatis aktif"
+  },
+  "about": {
+    "title": "Manifesto",
+    "subtitle": "Mengapa Kami Menulis dari Bayangan"
+  },
+  "archive": {
+    "title": "Arsip",
+    "subtitle": "Semua transmisi, tersimpan abadi.",
+    "byYear": "Per Tahun",
+    "byTag": "Per Tag"
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "profile": "Profil",
+    "username": "Nama Pengguna",
+    "bio": "Bio",
+    "bioPlaceholder": "Siapa kamu? (opsional)",
+    "language": "Bahasa Antarmuka",
+    "save": "Simpan Perubahan",
+    "saving": "Menyimpan...",
+    "saved": "Perubahan disimpan.",
+    "danger": "Zona Berbahaya",
+    "deleteAccount": "Hapus Akun"
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Transmisi ini hilang.",
+    "description": "Arsip tidak menemukan yang kamu cari.",
+    "back": "Kembali ke Bawah Tanah"
+  },
+  "common": {
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan.",
+    "retry": "Coba lagi",
+    "cancel": "Batal",
+    "confirm": "Konfirmasi",
+    "delete": "Hapus",
+    "edit": "Edit",
+    "save": "Simpan",
+    "close": "Tutup"
+  }
+}

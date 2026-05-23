@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "journal": "Journal",
+    "archive": "Archive",
+    "about": "Manifesto",
+    "login": "Enter",
+    "dashboard": "Dashboard",
+    "publish": "Publish",
+    "settings": "Settings",
+    "logout": "Exit"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Digital Resistance Archive",
+      "subtitle": "The Underground Writes Back",
+      "description": "Anonymous writings, underground journals, and manifesto fragments from the digital underground.",
+      "cta": "Enter the Archive",
+      "secondary": "Read the Manifesto"
+    },
+    "featured": "Featured Transmissions",
+    "latest": "Latest Archives",
+    "quotes": {
+      "q1": "The medium is the message. The underground is the movement.",
+      "q2": "Every word published without a face is a small act of resistance.",
+      "q3": "We write because silence is complicity."
+    }
+  },
+  "journal": {
+    "title": "Journal Feed",
+    "search": "Search the archive...",
+    "filter": "Filter by tag",
+    "all": "All Transmissions",
+    "anonymous": "Anonymous",
+    "readMore": "Read Transmission",
+    "empty": "No transmissions found.",
+    "loading": "Retrieving transmissions..."
+  },
+  "post": {
+    "by": "By",
+    "anonymous": "Anonymous",
+    "publishedOn": "Transmitted on",
+    "tags": "Tags",
+    "share": "Share",
+    "copyLink": "Copy Link",
+    "copied": "Copied",
+    "readNext": "Read Next",
+    "backToFeed": "← Return to Feed"
+  },
+  "login": {
+    "title": "Enter the Underground",
+    "subtitle": "Authentication required to publish.",
+    "github": "Continue with GitHub",
+    "disclaimer": "Your identity is between you and the archive.",
+    "loading": "Authenticating..."
+  },
+  "dashboard": {
+    "title": "Your Transmissions",
+    "welcome": "Welcome back",
+    "drafts": "Drafts",
+    "published": "Published",
+    "total": "Total",
+    "newPost": "New Transmission",
+    "noPosts": "No transmissions yet.",
+    "startWriting": "Begin writing.",
+    "edit": "Edit",
+    "delete": "Delete",
+    "publish": "Publish",
+    "unpublish": "Unpublish",
+    "draft": "Draft",
+    "status": "Status"
+  },
+  "editor": {
+    "title": "New Transmission",
+    "editTitle": "Edit Transmission",
+    "titlePlaceholder": "Title of your transmission...",
+    "contentPlaceholder": "Begin writing. Markdown supported.\n\n# Heading\n**bold** *italic* `code`\n\n> Blockquote",
+    "tags": "Tags",
+    "tagsPlaceholder": "resistance, manifesto, archive",
+    "language": "Language",
+    "anonymous": "Publish anonymously",
+    "anonymousHelp": "Your name will be hidden from readers.",
+    "saveDraft": "Save Draft",
+    "publish": "Publish",
+    "preview": "Preview",
+    "write": "Write",
+    "saving": "Saving...",
+    "saved": "Saved",
+    "publishing": "Publishing...",
+    "published": "Published",
+    "autosave": "Autosave enabled"
+  },
+  "about": {
+    "title": "The Manifesto",
+    "subtitle": "Why We Write from the Shadows"
+  },
+  "archive": {
+    "title": "The Archive",
+    "subtitle": "All transmissions, preserved.",
+    "byYear": "By Year",
+    "byTag": "By Tag"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile",
+    "username": "Username",
+    "bio": "Bio",
+    "bioPlaceholder": "Who are you? (optional)",
+    "language": "Interface Language",
+    "save": "Save Changes",
+    "saving": "Saving...",
+    "saved": "Changes saved.",
+    "danger": "Danger Zone",
+    "deleteAccount": "Delete Account"
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "This transmission was lost.",
+    "description": "The archive does not contain what you seek.",
+    "back": "Return to the Underground"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong.",
+    "retry": "Try again",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save",
+    "close": "Close"
+  }
+}

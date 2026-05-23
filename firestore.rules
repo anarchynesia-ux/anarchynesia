@@ -1,0 +1,61 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Helper functions ──────────────────────────────────────────
+    function isAuth() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isAuth() && request.auth.uid == uid;
+    }
+
+    function isValidPost() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['title', 'content', 'slug', 'language', 'authorId', 'draft'])
+        && data.title is string
+        && data.title.size() >= 1
+        && data.title.size() <= 300
+        && data.content is string
+        && data.content.size() >= 1
+        && data.language in ['en', 'id']
+        && data.authorId == request.auth.uid;
+    }
+
+    function isValidUserUpdate() {
+      let allowed = ['username', 'bio', 'updatedAt'];
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(allowed);
+    }
+
+    // ── Users ─────────────────────────────────────────────────────
+    match /users/{userId} {
+      // Anyone can read public profiles
+      allow read: if true;
+
+      // Only owner can create/update their own profile
+      allow create: if isOwner(userId);
+      allow update: if isOwner(userId) && isValidUserUpdate();
+
+      // Prevent deletion
+      allow delete: if false;
+    }
+
+    // ── Posts ─────────────────────────────────────────────────────
+    match /posts/{postId} {
+      // Published posts are public; drafts only visible to author
+      allow read: if resource.data.draft == false
+                  || (isAuth() && request.auth.uid == resource.data.authorId);
+
+      // Any authenticated user can create posts
+      allow create: if isAuth() && isValidPost();
+
+      // Only author can update/delete
+      allow update: if isAuth()
+                    && request.auth.uid == resource.data.authorId
+                    && request.resource.data.authorId == resource.data.authorId;
+
+      allow delete: if isAuth() && request.auth.uid == resource.data.authorId;
+    }
+  }
+}
